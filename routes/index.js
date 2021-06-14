@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
   var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
   Users.find({}).lean().exec(
     function (e, docs) {
-      res.render('index', { "": docs });
+      res.render('index', { "cidades": docs });
   });
 });
 
