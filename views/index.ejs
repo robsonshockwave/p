@@ -39,20 +39,30 @@
           }
         };
     </script>
+    <style>
+      h5 {
+        display: inline;
+      }
+
+      input {
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
 
   <body>
     <h4>Digite um CEP, por exemplo: 01001000</h4>
+    <br>
     <!-- Inicio do formulario -->
       <form method="get" action="/resposta">
         <label>Cep:
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
-        <label>Cidade:
+        <input name="cep" type="text" id="cep" value="" size="30" maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
+        <label><h5>A cida que você consultou foi:</h6>
         <input name="cidade" type="text" id="cidade" size="40" /></label><br />
         <button type="submit">enviar</button>
       </form>
       <br>
       <hr>
-      <a href="colocarcidade">Colocar uma cidade no banco de dados</a>
+      <a href="colocarcidade">Clique aqui para colocar uma cidade e a temperatura da mesma no banco de dados</a>
   </body>
 </html>

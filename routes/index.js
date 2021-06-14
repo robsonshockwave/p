@@ -2,12 +2,15 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
+  /*
   var db = require("../db");
   var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
   Users.find({}).lean().exec(
     function (e, docs) {
       res.render('index', { "cidades": docs });
   });
+  */
+  res.render('index');
 });
 
 router.get('/resposta', function(req, res) {
