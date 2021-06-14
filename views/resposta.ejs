@@ -10,7 +10,7 @@
 <body>
     <ul>
         <% cidades.forEach(function(cidad){ %>
-            <%  if(cidad.cidade == "São Paulo") {%>
+            <%  if(cidad.cidade === "São Paulo") {%>
                 <h3><%= cidad.temp %> graus em <%= cidad.cidade %></h3>
                 <hr>
             <%} else { %>
