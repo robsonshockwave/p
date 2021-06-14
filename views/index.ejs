@@ -43,17 +43,12 @@
 
   <body>
     <!-- Inicio do formulario -->
-      <form method="get" action="/">
+      <form method="get" action="/resposta">
         <label>Cep:
         <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
         <label>Cidade:
         <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <button type="submit">enviar</button>
       </form>
-
-      <ul>
-        <% cidades.forEach(function(cidad){ %>
-          <li><%= cidad.cidade %></a></li>	
-        <%})%>
-      </ul>
   </body>
 </html>
