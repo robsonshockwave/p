@@ -44,11 +44,17 @@
 
   <body>
     <!-- Inicio do formulario -->
-      <form method="get" action=".">
+      <form method="get" action="/">
         <label>Cep:
         <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);" /></label><br />
         <label>Cidade:
         <input name="cidade" type="text" id="cidade" size="40" /></label><br />
       </form>
+
+      <ul>
+        <% userlist.forEach(function(user){ %>
+          <li><%= user.cidade %></a></li>	
+        <%})%>
+      </ul>
   </body>
 </html>
